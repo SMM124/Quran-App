@@ -1315,7 +1315,7 @@
                     <Modal isOpen={showTafsir} onClose={() => setShowTafsir(false)} title={`তাফসীর - আয়াত ${activeTafsirAyah?.id}`}>
                         <div className="space-y-6 animate-fade-in">
                             <div className="p-6 rounded-2xl text-right font-arabic text-3xl leading-[2.5] bg-[#022c22] border border-gray-700">{activeTafsirAyah?.ar}</div>
-                            {!tafsirText || tafsirText === "লোড হচ্ছে..." ? <div className="flex items-center gap-2 text-green-500 animate-pulse"><Loader2 className="w-5 h-5 animate-spin"/> জেমিনি এআই তাফসীর লিখছে...</div> : <div className="prose prose-invert max-w-none"><MarkdownRenderer content={tafsirText} /></div>}
+                            {!tafsirText || tafsirText === "লোড হচ্ছে..." ? <div className="flex items-center gap-2 text-green-500 animate-pulse"><Loader2 className="w-5 h-5 animate-spin"/>তাফসীর লোড হচ্ছে...</div> : <div className="prose prose-invert max-w-none"><MarkdownRenderer content={tafsirText} /></div>}
                         </div>
                     </Modal>
                 </div>
@@ -1518,4 +1518,5 @@
         root.render(<App />);
     </script>
 </body>
+
 </html>
